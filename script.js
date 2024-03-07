@@ -1,0 +1,28 @@
+
+// -------------chat box-----------------
+
+let chatBoxButton = document.querySelector('#button');
+
+chatBoxButton.addEventListener('click',()=>{
+    document.querySelector('.msg').style.display = "block";
+})
+
+
+
+// show and close the menu bars 
+
+let menuBar = document.querySelector('nav');
+let showButton = document.querySelector('.show');
+let closeButton = document.querySelector('.close');
+
+showButton.addEventListener('click', ()=>{
+    showButton.style.display = 'none';
+    closeButton.style.display = 'block';
+    menuBar.style.display = 'block';
+})
+
+closeButton.addEventListener('click', ()=>{
+    showButton.style.display = 'block';
+    closeButton.style.display = 'none';
+    menuBar.style.display = 'none';
+})
