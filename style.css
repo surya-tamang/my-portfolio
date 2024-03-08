@@ -230,6 +230,7 @@ section {
 }
 
 .about h1 {
+    text-transform: uppercase;
     padding: 5px 25px;
     border-radius: 25px 8px;
     margin-bottom: 4rem;
@@ -525,6 +526,11 @@ footer {
 /* -----------------responsiveness-------------------- */
 
 @media screen and (max-width: 768px) {
+
+    header {
+        width: 100%;
+    }
+
     header .logo {
         font-size: 25px;
     }
@@ -535,14 +541,12 @@ footer {
 
     .info {
         width: 80%;
+        text-align: center;
+        padding: 0;
     }
 
     .info h1 {
         font-size: 50px;
-    }
-
-    .info {
-        text-align: center;
     }
 
     .social {
@@ -564,11 +568,19 @@ footer {
         flex-direction: column;
     }
 
+    .about .title {
+        width: 50%;
+    }
+
+    .aboutContent .detail {
+        width: 100%;
+    }
+
     .projectSection {
         flex-direction: column;
         margin-top: 4rem;
-        gap: 30px;
-        margin-bottom: 40px;    }
+        gap: 60px;
+    }
 
     .contactSection {
         flex-direction: column;
@@ -595,19 +607,24 @@ footer {
         transition: all 0.3s ease-in-out;
     }
 
+    .home{
+        padding: 0;
+    }
+
     .info h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     nav ul {
         width: 100%;
         text-align: center;
+        padding: 0;
     }
 
     header nav li {
         display: block;
         width: 100%;
-        padding: 20px;
+        padding: 15px 0;
         border-bottom: 1px solid #3d3d4b80;
     }
 
@@ -616,10 +633,6 @@ footer {
         display: block;
         z-index: 999;
         padding: 20px;
-    }
-
-    span {
-        display: none;
     }
 
     .close {
@@ -633,10 +646,6 @@ footer {
 
     .about h1::after {
         width: 40%;
-    }
-
-    .title {
-        padding: 10px 40px;
     }
 
     .aboutContent article {
