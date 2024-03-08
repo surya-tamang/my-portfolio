@@ -14,6 +14,9 @@ chatBoxButton.addEventListener('click',()=>{
 let menuBar = document.querySelector('nav');
 let showButton = document.querySelector('.show');
 let closeButton = document.querySelector('.close');
+let list = document.querySelectorAll('li');
+
+
 
 showButton.addEventListener('click', ()=>{
     showButton.style.display = 'none';
@@ -26,3 +29,11 @@ closeButton.addEventListener('click', ()=>{
     closeButton.style.display = 'none';
     menuBar.style.display = 'none';
 })
+
+for (let i = 0; i<list.length; i++){
+    list[i].addEventListener('click',()=>{
+        menuBar.style.display = 'none';
+        closeButton.style.display = 'none';
+        showButton.style.display = 'block';
+    })
+}

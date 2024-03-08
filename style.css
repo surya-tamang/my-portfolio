@@ -576,6 +576,10 @@ footer {
         width: 100%;
     }
 
+    .project {
+        padding-top: 80px;
+    }
+
     .projectSection {
         flex-direction: column;
         margin-top: 4rem;
@@ -607,7 +611,7 @@ footer {
         transition: all 0.3s ease-in-out;
     }
 
-    .home{
+    .home {
         padding: 0;
     }
 
