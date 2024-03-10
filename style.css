@@ -86,6 +86,17 @@ section {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    animation: slideRight 1s ease;
+}
+
+@keyframes slideRight {
+    0% {
+        margin-left: -100px;
+    }
+
+    100% {
+        margin-left: 0;
+    }
 }
 
 .social a i {
@@ -154,6 +165,21 @@ section {
     color: #000000;
     background-color: transparent;
     margin: 0;
+    animation: showUp 0.5s ease-in;
+}
+
+@keyframes showUp {
+    0% {
+        margin-top: 10rem;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.info h1 span {
+    color: #2b84a5;
 }
 
 .info button {
@@ -167,8 +193,8 @@ section {
     box-shadow: 4px 5px 5px #474545;
 }
 
-.info button:hover {
-    background-color: #3d3d4b;
+button:hover {
+    background-color: #2b84a5;
 }
 
 .chatbox {
@@ -220,6 +246,7 @@ section {
     padding-top: 90px;
     background-color: #e6e6e6;
 }
+
 
 .title {
     width: 30%;
@@ -329,17 +356,55 @@ section {
 
 .bar .barline {
     height: 10px;
-    width: 50%;
     background-color: #25252d;
 
 }
 
+.bar .html{
+    width: 50%;
+    animation: html 1.5s ease-in;
+}
+
 .bar .css {
     width: 30%;
+    /* animation-delay: 3s; */
+    animation: css 1.4s ease-in;
 }
 
 .bar .js {
+    /* animation-delay: 2s; */
     width: 5%;
+    animation: js 1.5s ease-in;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 5%;
+    }
 }
 
 
