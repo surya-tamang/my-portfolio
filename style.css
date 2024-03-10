@@ -39,6 +39,7 @@ header nav li {
 header nav li a {
     color: #000;
     font-size: 18px;
+    transition: all 0.3s ease-in;
 }
 
 header nav li::after {
@@ -55,6 +56,10 @@ header nav li::after {
 
 header nav li:hover::after {
     scale: 1;
+}
+
+header nav li:hover a {
+    font-size: 22px;
 }
 
 .icon {
@@ -310,6 +315,8 @@ button:hover {
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 5px 5px 10px #000000;
+
+    animation: slideRight 0.5s ease-in;
 }
 
 .detail {
@@ -360,7 +367,7 @@ button:hover {
 
 }
 
-.bar .html{
+.bar .html {
     width: 50%;
     animation: html 1.5s ease-in;
 }
@@ -438,6 +445,7 @@ button:hover {
     box-shadow: 5px 5px 5px #3d3d4b;
     transition: all 0.4s ease-in;
     overflow: hidden;
+    animation: showUp 0.5s ease-in;
 }
 
 .projectcard:hover img {
@@ -498,6 +506,7 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    animation: slideRight 1s ease;
 }
 
 .info-box h1 {
