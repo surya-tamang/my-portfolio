@@ -30,10 +30,20 @@ closeButton.addEventListener('click', ()=>{
     menuBar.style.display = 'none';
 })
 
-for (let i = 0; i<list.length; i++){
-    list[i].addEventListener('click',()=>{
-        menuBar.style.display = 'none';
-        closeButton.style.display = 'none';
-        showButton.style.display = 'block';
-    })
-}
+// for (let i = 0; i<list.length; i++){
+//     list[i].addEventListener('click',()=>{
+//         menuBar.style.display = 'none';
+//         closeButton.style.display = 'none';
+//         showButton.style.display = 'block';
+//     })
+// }
+
+//for typing animation
+
+var typed = new Typed('#type', {
+    strings:["Surya Tamang"],
+    typeSpeed: 260,
+    loop:true
+  });
+
+
