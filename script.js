@@ -1,11 +1,11 @@
 
 // -------------chat box-----------------
 
-let chatBoxButton = document.querySelector('#button');
+// let chatBoxButton = document.querySelector('#button');
 
-chatBoxButton.addEventListener('click',()=>{
-    document.querySelector('.msg').style.display = "block";
-})
+// chatBoxButton.addEventListener('click',()=>{
+//     document.querySelector('.msg').style.display = "block";
+// })
 
 
 
@@ -43,7 +43,12 @@ closeButton.addEventListener('click', ()=>{
 var typed = new Typed('#type', {
     strings:["Surya Tamang"],
     typeSpeed: 260,
-    loop:true
+    // loop:true
   });
 
 
+//faded animations
+  AOS.init({
+    duration: 3000,
+    once: true,
+  });
