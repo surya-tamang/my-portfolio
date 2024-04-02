@@ -26,6 +26,10 @@ header .logo {
     font-weight: bold;
 }
 
+.logo a {
+    color: #000000;
+}
+
 header nav {
     margin-right: 30px;
 }
@@ -85,24 +89,31 @@ section {
 
 .social {
     padding: 10px;
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: -60px;
+    z-index: 999;
     background-color: #000000;
     display: flex;
     border-radius: 0 30px 30px 0;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    animation: slideRight 1s ease;
+    animation: slideRight 1.5s ease;
+    transition: all 0.3s ease-in;
+}
+
+.social:hover {
+    left: 0px;
 }
 
 @keyframes slideRight {
-    0% {
-        margin-left: -100px;
-    }
 
-    100% {
+    0%,
+    100% {}
+
+    50% {
         margin-left: 0;
+        left: 0;
     }
 }
 
@@ -661,15 +672,10 @@ footer {
     .social {
         flex-direction: row;
         border-radius: 15px;
-        margin-top: 30px;
+        margin-top: 60px;
         padding: 10px 30px;
         position: relative;
-    }
-
-    .social a span {
-        position: relative;
-        background-color: transparent;
-        color: #000;
+        z-index: -999;
         left: 0;
     }
 
