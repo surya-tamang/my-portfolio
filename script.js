@@ -41,9 +41,9 @@ closeButton.addEventListener('click', ()=>{
 //for typing animation
 
 var typed = new Typed('#type', {
-    strings:["Surya Tamang", "Front end web developer"],
+    strings:["I am Surya Tamang"],
     typeSpeed: 260,
-    loop:true
+    // loop:true
   });
 
 
