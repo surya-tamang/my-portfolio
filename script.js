@@ -51,3 +51,6 @@ var typed = new Typed('#type', {
     duration: 3000,
     once: true,
   });
+
+
+  
