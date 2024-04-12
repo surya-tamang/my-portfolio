@@ -9,7 +9,7 @@
 
 
 
-// show and close the menu bars 
+/* ********************\ for hamburgers /******************* */
 
 let menuBar = document.querySelector('nav');
 let showButton = document.querySelector('.show');
@@ -18,44 +18,55 @@ let list = document.querySelectorAll('li');
 
 
 
-showButton.addEventListener('click', ()=>{
-    showButton.style.display = 'none';
-    closeButton.style.display = 'block';
-    menuBar.style.display = 'block';
+showButton.addEventListener('click', () => {
+  showButton.style.display = 'none';
+  closeButton.style.display = 'block';
+  menuBar.style.display = 'block';
 })
 
-closeButton.addEventListener('click', ()=>{
-    showButton.style.display = 'block';
-    closeButton.style.display = 'none';
-    menuBar.style.display = 'none';
+closeButton.addEventListener('click', () => {
+  showButton.style.display = 'block';
+  closeButton.style.display = 'none';
+  menuBar.style.display = 'none';
 })
 
-// for (let i = 0; i<list.length; i++){
-//     list[i].addEventListener('click',()=>{
-//         menuBar.style.display = 'none';
-//         closeButton.style.display = 'none';
-//         showButton.style.display = 'block';
-//     })
-// }
-
-//for typing animation
+/* ********************\ for typing animation /******************* */
 
 var typed = new Typed('#type', {
-    strings:["I am Surya Tamang"],
-    typeSpeed: 260,
-  });
+  strings: ["I am Surya Tamang"],
+  typeSpeed: 260,
+});
 
 
 
-  // for fun
-  
+/* ********************\ Fun title prank /******************* */
+
 let docTitle = document.title;
 
-window.addEventListener("blur",()=>{
+window.addEventListener("blur", () => {
   document.title = "Hire me !!"
 })
-window.addEventListener("focus",()=>{
+window.addEventListener("focus", () => {
   document.title = docTitle;
 })
 
-  
+
+
+/* ********************\ for email validation /******************* */
+
+let email = document.querySelector('#email');
+let submitBtn = document.querySelector('#submitButton');
+
+let validData = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+submitBtn.addEventListener('click', () => {
+
+  if (!email.value.match(validData)) {
+    document.querySelector('#errorMsg').innerHTML = "Invalid email !"
+    document.querySelector('#errorMsg').classList.add('red');
+  }
+  else {
+    document.querySelector('#errorMsg').innerHTML = "Message sent successfully !"
+    document.querySelector('#errorMsg').classList.add('blue');
+  }
+});

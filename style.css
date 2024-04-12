@@ -616,6 +616,14 @@ form button:hover {
     cursor: pointer;
 }
 
+form .red {
+    color: #f81717;
+}
+
+form .blue{
+    color: #2f70d8;
+}
+
 /* ******************* footer ****************** */
 
 footer {
