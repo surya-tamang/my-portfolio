@@ -46,11 +46,16 @@ var typed = new Typed('#type', {
   });
 
 
-//faded animations
-  AOS.init({
-    duration: 3000,
-    once: true,
-  });
 
+  // for fun
+  
+let docTitle = document.title;
+
+window.addEventListener("blur",()=>{
+  document.title = "Hire me !!"
+})
+window.addEventListener("focus",()=>{
+  document.title = docTitle;
+})
 
   
