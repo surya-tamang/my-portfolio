@@ -43,7 +43,6 @@ closeButton.addEventListener('click', ()=>{
 var typed = new Typed('#type', {
     strings:["I am Surya Tamang"],
     typeSpeed: 260,
-    // loop:true
   });
 
 
