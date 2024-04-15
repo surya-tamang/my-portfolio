@@ -76,13 +76,21 @@ section {
     overflow: hidden;
     min-height: 100vh;
 }
+
 .intro {
     height: 100vh;
     width: 100%;
-    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.intro .image {
+    width: 70%;
+}
+
+.intro .image img {
+    width: 100%;
 }
 
 .social {
@@ -169,7 +177,7 @@ section {
 .info {
     width: 80%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
     gap: 30px;
@@ -211,44 +219,6 @@ section {
 button:hover {
     background-color: #2b84a5;
 }
-
-.chatbox {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-}
-
-.chatbox button {
-    border: none;
-    background-color: #3d3d4b;
-    color: #fff;
-    border-radius: 50%;
-    padding: 12px;
-    font-size: 30px;
-}
-
-.chatbox .msg {
-    height: 15rem;
-    border-radius: 15px;
-    display: flex;
-    box-shadow: 1px 1px 5px #3d3d4b;
-    align-items: flex-end;
-    background-color: #fff;
-    width: 15rem;
-    margin-bottom: 30px;
-    display: none;
-}
-
-.chatbox .msg input {
-    width: 100%;
-    padding: 8px 7px;
-    border-radius: 8px;
-    border: 1px solid #3d3d4b;
-    outline: none;
-}
-
-
-
 
 /* **************about section************ */
 
@@ -335,7 +305,7 @@ button:hover {
 }
 
 .img img {
-    height: 350px;
+    height: 100%;
     width: 300px;
     object-fit: cover;
     border-radius: 15px;
@@ -349,7 +319,8 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 0 30px;
+    /* margin-bottom: 60px; */
 }
 
 .detail article {
@@ -367,10 +338,58 @@ button:hover {
     background-color: #474545;
 }
 
+.skill h3 {
+    text-decoration: underline;
+}
+
+/* .skillBox {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 15px;
+    position: relative;
+}
+
+.skillBox img {
+    height: 50px;
+}
+
+.skillBox ul {
+    margin-top: 5px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50rem;
+    opacity: 0;
+}
+
+
+.skillBox .skillHover:hover ul{
+    opacity: 1;
+} 
+
+
+.skillBox ul li{
+    margin: 5px 0;
+}
+
+.skillBox .html-bg{
+    background-color: #e23434;
+}
+.skillBox .css-bg{
+    background-color: #2f70d8;
+    left: 0;
+}
+.skillBox .js-bg{
+    background-color: #000000;
+    color: #e6e6e6;
+    left: 0;
+} */
 .box {
     position: relative;
     margin: 10px 0;
 }
+
 
 .detail .box .bar {
     border: 2px solid;
@@ -394,18 +413,18 @@ button:hover {
 
 .bar .html {
     width: 50%;
-    /* animation: html 1.5s ease-in; */
+    animation: html 1.5s ease-in;
 }
 
 .bar .css {
     width: 30%;
-    /* animation: css 1.4s ease-in; */
+    animation: css 1.4s ease-in;
 }
 
 .bar .js {
-    /* animation-delay: 2s; */
+    animation-delay: 2s;
     width: 8%;
-    /* animation: js 1.5s ease-in; */
+    animation: js 1.5s ease-in;
 }
 
 /* @keyframes html {
@@ -620,7 +639,7 @@ form .red {
     color: #f81717;
 }
 
-form .blue{
+form .blue {
     color: #2f70d8;
 }
 
@@ -644,10 +663,16 @@ footer {
 
     header .logo {
         font-size: 25px;
+        padding: 10px 15px;
+    }
+
+    .home {
+        padding: 40px 0;
     }
 
     .intro {
         flex-direction: column-reverse;
+        gap: 50px;
     }
 
     .info {
@@ -658,16 +683,6 @@ footer {
 
     .info h1 {
         font-size: 50px;
-    }
-
-    .social {
-        flex-direction: row;
-        border-radius: 15px;
-        margin-top: 60px;
-        padding: 10px 30px;
-        position: relative;
-        z-index: -999;
-        left: 0;
     }
 
     .aboutContent {
@@ -722,6 +737,21 @@ footer {
         padding: 0;
     }
 
+    .intro .image {
+        width: 80%;
+    }
+
+
+    .social {
+        flex-direction: row;
+        border-radius: 15px;
+        margin-top: 60px;
+        padding: 10px 30px;
+        position: relative;
+        z-index: -999;
+        left: 0;
+    }
+
     .info h1 {
         font-size: 30px;
     }
@@ -743,7 +773,7 @@ footer {
         font-size: 30px;
         display: block;
         z-index: 999;
-        padding: 20px;
+        padding: 10px;
     }
 
     .close {
