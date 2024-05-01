@@ -342,49 +342,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* .skillBox {
-    display: flex;
-    width: 100%;
-    gap: 1.5rem;
-    margin-top: 15px;
-    position: relative;
-}
-
-.skillBox img {
-    height: 50px;
-}
-
-.skillBox ul {
-    margin-top: 5px;
-    position: absolute;
-    padding: 10px;
-    border-radius: 8px;
-    width: 50rem;
-    opacity: 0;
-}
-
-
-.skillBox .skillHover:hover ul{
-    opacity: 1;
-} 
-
-
-.skillBox ul li{
-    margin: 5px 0;
-}
-
-.skillBox .html-bg{
-    background-color: #e23434;
-}
-.skillBox .css-bg{
-    background-color: #2f70d8;
-    left: 0;
-}
-.skillBox .js-bg{
-    background-color: #000000;
-    color: #e6e6e6;
-    left: 0;
-} */
 .box {
     position: relative;
     margin: 10px 0;

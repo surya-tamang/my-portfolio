@@ -39,12 +39,12 @@ var typed = new Typed('#type', {
 
 
 
-/* ********************\ Fun title prank /******************* */
+/* ********************\ Fun title  /******************* */
 
 let docTitle = document.title;
 
 window.addEventListener("blur", () => {
-  document.title = "Hire me !!"
+  document.title = "Where you goin? !!"
 })
 window.addEventListener("focus", () => {
   document.title = docTitle;
