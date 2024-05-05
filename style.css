@@ -391,6 +391,7 @@ button:hover {
     justify-content: center;
     gap: 40px;
     margin-top: 5rem;
+    flex-wrap: wrap;
 }
 
 .project h1 {
@@ -404,23 +405,43 @@ button:hover {
 .projectcard {
     width: 18rem;
     padding: 25px;
-    border-radius: 10px;
-    background-color: #cfcece;
-    box-shadow: 5px 5px 5px #3d3d4b;
-    transition: all 0.4s ease-in;
+    height: 24rem;
+    border-radius: 16px;
+    background-color: #f4f4f4;
     overflow: hidden;
-    animation: showUp 0.5s ease-in;
 }
 
-.projectcard:hover img {
-    scale: 1.1;
-}
-
-.projectcard img {
+.projectcard .img {
     width: 100%;
-    border-radius: 10px;
-    height: 10rem;
-    box-shadow: 1px 1px 5px #3d3d4b;
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectcard .img p {
+    position: absolute;
+    bottom: -100%;
+    color: #cfcece;
+    background-color: #25252d95;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.projectcard:hover p {
+    bottom: 0;
+}
+
+.projectcard .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .aboutProject {
