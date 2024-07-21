@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "name": "space tourism",
+      "image": "projectimage/spacetourism.png",
+      "live": "https://surya-tamang.github.io/space-tourism/",
+      "preview": "https://github.com/surya-tamang/space-tourism",
+      "des": "Developed a space tourism website using React.js and tailwind CSS. The site features a user-friendly interface, and users are able to view each page and be able to toggle between the tabs to see new information. It is responsive to all devices."
+    },
+    {
+      "name": "Ecommerce site",
+      "image": "projectimage/fashionbazar.png",
+      "live": "https://surya-tamang.github.io/fashion-bazar/",
+      "preview": "https://github.com/surya-tamang/fashion-bazar",
+      "des": " Developed an e-commerce website, 'Fashion Bazar' focused on providing a seamless shopping experience for fashion products."
+    },
+    {
+      "name": "Movie app",
+      "image": "projectimage/movieApp.png",
+      "live": "https://surya-tamang.github.io/movie-app/",
+      "preview": "https://github.com/surya-tamang/movie-app",
+      "des": "Developed a responsive movie application using React and Tailwind CSS, enabling users to search for movies and view detailed information about each title."
+    },
+    {
+      "name": "Weather app",
+      "image": "projectimage/weather.png",
+      "live": "https://surya-tamang.github.io/weather-app/",
+      "preview": "https://github.com/surya-tamang/weather-app",
+      "des": "Created a weather application that provides real-time weather updates for any city worldwide, enhancing user experience with a responsive design and seamless data integration."
+    },
+
+    {
+      "name": "Faq accordion",
+      "image": "projectimage/faqaccordion.png",
+      "live": "https://65d02b62a5c29856167c0a46--eclectic-blancmange-273c7d.netlify.app/",
+      "preview": "https://github.com/surya-tamang/faq-accordion/tree/main/faq-accordion-main",
+      "des": "An FAQ accordion is a user interface component commonly used on websites to organize and display frequently asked questions (FAQs) in a compact and accessible manner. It typically includes multiple items, each containing a question and its corresponding answer."
+    }
+  ]
+}

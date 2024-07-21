@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.navlist::after {
+    content: "";
+    background-color: #41eca5;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    scale: 0;
+    transition: all 0.3s ease-in;
+}
+
+.navlist:hover {
+    color: #41eca5;
+}
+
+.navlist:hover::after {
+    scale: 1;
+}
+
+h1.heading::after {
+    content: "";
+    background: #41eca5;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    right: 0;
+}
+
+.main-background {
+    background-image: url('heropage/IMG_20240711_175318.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30rem;
+}
+
+@media screen and (max-width: 768px) {
+    .main-background {
+        background: none;
+    }
+
+    body.no-scroll {
+        overflow: hidden;
+    }
+}
+
+/* contact form styling */
+
+form input,
+textarea {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: transparent;
+    border-bottom: 3px solid #25252578;
+}
+
+form input:focus,
+textarea:focus {
+    border: 2px solid #41eca5;
+}
+
+textarea {
+    resize: none;
+    min-height: 150px;
+    max-height: 150px;
+}
