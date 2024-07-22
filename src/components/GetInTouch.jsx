@@ -17,11 +17,11 @@ const GetInTouch = () => {
       icon: "fa-brands fa-linkedin-in",
       link: "https://www.linkedin.com/in/surya-tamang-022b64269/",
     },
-    {
-      name: "address",
-      icon: "fa-solid fa-location-dot",
-      link: "https://maps.app.goo.gl/T1cyw54BeGwD3bwV9",
-    },
+    // {
+    //   name: "address",
+    //   icon: "fa-solid fa-location-dot",
+    //   link: "https://maps.app.goo.gl/T1cyw54BeGwD3bwV9",
+    // },
   ];
 
   return (

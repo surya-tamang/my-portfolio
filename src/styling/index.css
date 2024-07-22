@@ -38,7 +38,7 @@ h1.heading::after {
 }
 
 .main-background {
-    background-image: url('heropage/IMG_20240711_175318.png');
+    background: url('/heropage/IMG_20240711_175318.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
