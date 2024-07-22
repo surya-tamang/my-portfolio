@@ -14,7 +14,6 @@ This is a portfolio website project developed using React.js and styled with Tai
 - React.js: Front-end JavaScript library for building user interfaces.
 - Tailwind CSS: Utility-first CSS framework for styling.
 - Typed.js: Library for creating typing animations.
-- GSAP: Animations.
 
 # Acknowledgments
 
