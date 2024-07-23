@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 
-
+.logo{
+    color: #1dbb79;
+}
 
 .navlist::after {
     content: "";
