@@ -5,17 +5,22 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 5px; /* width of the entire scrollbar */
+  width: 5px;
+  /* width of the entire scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000; /* color of the tracking area */
+  background: #000000;
+  /* color of the tracking area */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* color of the scroll thumb */
-  border-radius: 10px; /* roundness of the scroll thumb */
-  border: 3px solid #929292; /* creates padding around scroll thumb */
+  background-color: #888;
+  /* color of the scroll thumb */
+  border-radius: 10px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #929292;
+  /* creates padding around scroll thumb */
 }
 
 .navlist::after {

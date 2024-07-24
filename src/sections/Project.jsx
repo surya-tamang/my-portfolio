@@ -10,7 +10,7 @@ const Project = () => {
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {project.map((item, index) => {
-              const { name, image, des, live } = item;
+              const { name, image, des, live, techs } = item;
               return (
                 <a
                   key={index}
@@ -29,6 +29,11 @@ const Project = () => {
                   </h2>
 
                   <p className="mt-1 text-sm text-gray-300">{des}</p>
+                  <section className="flex items-center mt-4 gap-5">
+                    {techs.map((item, index) => (
+                      <img src={item} key={index} className="w-8 h-8" />
+                    ))}
+                  </section>
                 </a>
               );
             })}

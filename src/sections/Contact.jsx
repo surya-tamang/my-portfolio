@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import GetInTouch from "../components/GetInTouch";
 
 const Contact = () => {
@@ -23,17 +23,23 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-11/12 flex items-center justify-center bg-accent md:flex-row flex-col rounded-lg md:py-8 pb-8">
+    <section className="w-11/12 flex items-centeryj justify-center bg-accent md:flex-row flex-col rounded-lg md:py-8 pb-8">
       <div className="md:w-6/12 w-full">
         <GetInTouch />
       </div>
       <div className="w-full md:w-6/12">
         <form
+          // action="https://api.web3forms.com/submit"
           action=""
           method="post"
           className="flex flex-col gap-5 px-10"
           onSubmit={validateForm}
         >
+          {/* <input
+            type="hidden"
+            name="590394bb-0bfe-4fd6-9727-9af82518b0ec"
+            value="590394bb-0bfe-4fd6-9727-9af82518b0ec"
+          ></input> */}
           <input
             type="text"
             name="name"

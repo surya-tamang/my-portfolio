@@ -13,11 +13,20 @@ const Header = ({ menu, toggleMenu }) => {
 
   return (
     <header
-      className={`flex w-full justify-between items-center py-2 px-4 lg:px-8 z-10 backdrop-blur-sm fixed ${visible ? "block" : "hidden"}`}
+      className={`flex w-full justify-between items-center py-2 px-4 lg:px-8 z-10 backdrop-blur-sm fixed ${
+        visible ? "block" : "hidden"
+      }`}
     >
-      <h1 className="text-green md:text-3xl text-2xl font-bold ml-4 ">
-        <a href="#">S.T.</a>
-      </h1>
+      <Link
+        className="text-green md:text-3xl text-2xl font-bold ml-4 z-40"
+        to="hero"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        S.T
+      </Link>
 
       <div
         className="hamburger text-green text-3xl md:hidden z-40"
@@ -33,11 +42,11 @@ const Header = ({ menu, toggleMenu }) => {
       </div>
 
       <nav
-        className={`md:flex md:static md:h-auto absolute h-screen bg-transparent ${
+        className={`md:flex bg-black md:static md:h-auto absolute h-screen md:bg-transparent ${
           menu ? "flex" : "hidden"
-        } bg-slate-950 top-0 z-30 items-center right-0 md:w-auto w-80 text-green justify-center`}
+        } top-0 z-30 items-center right-0 md:w-auto w-full text-green justify-center`}
       >
-        <ul className="md:flex md:gap-8 px-6 text-center z-30">
+        <ul className="md:flex md:gap-8 px-6 text-center w-full md:h-auto h-screen items-center justify-center bg-accent md:bg-transparent md:pt-0 pt-36">
           {Nav.map((item, index) => {
             const { nav, to, offset } = item;
             return (
@@ -49,7 +58,7 @@ const Header = ({ menu, toggleMenu }) => {
                 offset={offset}
                 duration={500}
                 onClick={toggleMenu}
-                className="navlist block uppercase font-mono py-1 my-5 md:py-0 px-1 md:text-white relative cursor-pointer"
+                className="navlist block uppercase font-mono py-1 my-5 md:py-0 px-1 md:text-white relative cursor-pointer z-30"
               >
                 {nav}
               </Link>
