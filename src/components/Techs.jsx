@@ -12,12 +12,12 @@ const Techs = () => {
   return (
     <section className="techs w-11/12 md:px-10 px-5 rounded-lg bg-accent md:mt-5 mt-10">
       <Heading title="tech stacks" />
-      <article className="flex flex-wrap justify-evenly md:gap-5 items-center md:my-20">
+      <article className="flex flex-wrap justify-evenly md:gap-2 items-center md:my-20 ">
         {techStacks.map((stacks, index) => {
           const { name, image } = stacks;
           return (
             <div
-              className="group flex flex-col items-center sm:gap-10 md:h-32 h-32 md:gap-8 gap-4"
+              className="group flex flex-col items-center h-20 md:h-32 md:gap-8 gap-4 "
               key={index}
             >
               <img src={image} alt={name} className="md:w-32 sm:w-20 w-16" />
