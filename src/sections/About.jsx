@@ -28,14 +28,15 @@ const About = () => {
             Welcome! I&apos;m <b className="text-green">Surya Tamang</b>, a
             passionate web developer dedicated to creating impactful digital
             experiences. Explore my portfolio to see how I turn ideas into
-            reality. Thank you for visiting.
+            reality. Thank you for
+            <br className="md:hidden" /> visiting.
           </p>
         </div>
       </article>
 
       {/* feel free to connect */}
       <div>
-        <p className="flex items-center justify-center text-pretty text-3xl mt-32 md:mt-15 ">
+        <p className="flex items-center justify-center text-pretty text-xl md:text-3xl mt-32 md:mt-15 ">
           Feel free to&nbsp;
           <b className="text-green font-extrabold ">connect</b>.
         </p>
@@ -47,7 +48,7 @@ const About = () => {
             <button
               value={textToCopy}
               onClick={() => navigator.clipboard.writeText("npx surya-dev")}
-              className=" py-2 px-5 sm:py-4 md:py-6 mt-10 sm:px-7 md:px-9 flex text-2xl justify-center rounded-md border border-slate-700 bg-[length:200%_100%] font-medium text-slate-400 hover:border-green"
+              className=" py-2 px-5 sm:py-4 md:py-6 mt-10 sm:px-7 md:px-9 flex text-xl md:text-2xl justify-center rounded-md border border-slate-700 bg-[length:200%_100%] font-medium text-slate-400 hover:border-green"
             >
               <pre className="flex items-center justify-center gap-2">
                 npx surya-dev

@@ -13,7 +13,7 @@ const Header = ({ menu, toggleMenu }) => {
 
   return (
     <header
-      className={`flex w-full justify-between items-center py-2 px-4 lg:px-8 z-10 md:backdrop-blur-sm fixed ${visible ? "block" : "hidden"}`}
+      className={`flex w-full justify-between items-center py-2 px-4 lg:px-8 z-10 backdrop-blur-sm fixed ${visible ? "block" : "hidden"}`}
     >
       <h1 className="text-green md:text-3xl text-2xl font-bold ml-4 ">
         <a href="#">S.T.</a>
@@ -35,7 +35,7 @@ const Header = ({ menu, toggleMenu }) => {
       <nav
         className={`md:flex md:static md:h-auto absolute h-screen bg-transparent ${
           menu ? "flex" : "hidden"
-        } bg-black top-0 z-30 items-center right-0 md:w-auto w-80 text-green justify-center`}
+        } bg-slate-950 top-0 z-30 items-center right-0 md:w-auto w-80 text-green justify-center`}
       >
         <ul className="md:flex md:gap-8 px-6 text-center z-30">
           {Nav.map((item, index) => {
