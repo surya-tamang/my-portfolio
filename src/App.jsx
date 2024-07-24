@@ -12,7 +12,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="main bg-black text-white min-h-screen w-full font-monster">
+      <div className="main bg-black text-white min-h-screen w-full font-monster scroll-smooth">
         {intro ? (
           <Animation />
         ) : (
