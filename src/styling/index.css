@@ -1,81 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
 
-.logo{
-    color: #1dbb79;
+::-webkit-scrollbar-track {
+  background: #000000; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 3px solid #929292; /* creates padding around scroll thumb */
 }
 
 .navlist::after {
-    content: "";
-    background-color: #41eca5;
-    height: 2px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    scale: 0;
-    transition: all 0.3s ease-in;
+  content: "";
+  background-color: #41eca5;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  scale: 0;
+  transition: all 0.3s ease-in;
 }
 
 .navlist:hover {
-    color: #41eca5;
+  color: #41eca5;
 }
 
 .navlist:hover::after {
-    scale: 1;
+  scale: 1;
 }
 
 h1.heading::after {
-    content: "";
-    background: #41eca5;
-    height: 2px;
-    position: absolute;
-    width: 100%;
-    bottom: -10px;
-    right: 0;
+  content: "";
+  background: #41eca5;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  right: 0;
 }
 
 .main-background {
-    background: url('/heropage/IMG_20240711_175318.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30rem;
+  background: url("/heropage/IMG_20240711_175318.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
 }
 
 @media screen and (max-width: 768px) {
-    .main-background {
-        background: none;
-    }
+  .main-background {
+    background: none;
+  }
 
-    body.no-scroll {
-        overflow: hidden;
-    }
+  body.no-scroll {
+    overflow: hidden;
+  }
 }
 
 /* contact form styling */
 
 form input,
 textarea {
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    background-color: transparent;
-    border-bottom: 3px solid #25252578;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: transparent;
+  border-bottom: 3px solid #25252578;
 }
 
 form input:focus,
 textarea:focus {
-    border: 2px solid #41eca5;
+  border: 2px solid #41eca5;
 }
 
 textarea {
-    resize: none;
-    min-height: 150px;
-    max-height: 150px;
+  resize: none;
+  min-height: 150px;
+  max-height: 150px;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import GetInTouch from "../components/GetInTouch";
 
 const Contact = () => {

@@ -6,7 +6,6 @@ import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 import Project from "../sections/Project";
-import Hobby from "../sections/Hobby";
 
 const Home = () => {
   const [menu, setMenu] = useState(false);

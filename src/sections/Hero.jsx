@@ -35,7 +35,7 @@ const Hero = () => {
       >
         <header>
           <h1 className="sm:text-5xl text-3xl font-semibold tracking-widest uppercase font-kodeMono">
-            I'm Surya Tamang
+            I&apos;m Surya Tamang
           </h1>
           <h2 className="sm:text-2xl text-1xl py-3 tracking-widest font-semibold text-green">
             A web developer
