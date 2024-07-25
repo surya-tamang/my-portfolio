@@ -18,7 +18,7 @@ const Header = ({ menu, toggleMenu }) => {
       }`}
     >
       <Link
-        className="text-green md:text-3xl text-2xl font-bold ml-4 z-40"
+        className="text-green md:text-3xl text-2xl font-bold ml-4 z-40 cursor-pointer"
         to="hero"
         spy={true}
         smooth={true}

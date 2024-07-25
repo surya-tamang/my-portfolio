@@ -9,6 +9,7 @@ const PreLoad = () => {
       opacity: 0,
       duration: 1,
       delay: 2,
+      ease: "power3.out",
     });
   });
   return (

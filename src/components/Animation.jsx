@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useLayoutEffect } from "react";
 import gsap from "gsap";
 import PreLoad from "./PreLoad";
 
@@ -10,7 +10,7 @@ const Animation = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoad(false);
-    }, 3000);
+    }, 2500);
     return () => clearTimeout();
   }, []);
 
@@ -18,7 +18,7 @@ const Animation = () => {
     if (!load) {
       const timeline = gsap.timeline();
 
-      timeline.fromTo(
+      timeline.add(<PreLoad />).fromTo(
         text.current,
         {
           opacity: 0,
