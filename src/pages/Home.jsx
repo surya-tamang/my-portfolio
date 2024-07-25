@@ -23,7 +23,7 @@ const Home = () => {
       <Header toggleMenu={toggleMenu} menu={menu} />
       <main className="w-full min-h-screen flex items-center flex-col relative">
         <section
-          className="w-full flex flex-col items-center justify-center"
+          className="w-full flex flex-col items-center justify-center md:mt-8"
           id="hero"
         >
           <Hero />
