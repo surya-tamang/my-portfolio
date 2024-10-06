@@ -14,26 +14,27 @@ const Project = () => {
               return (
                 <a
                   key={index}
-                  className="group block rounded-xl border border-accent p-8 shadow-xl transition hover:border-green hover:shadow-green"
+                  className="group block rounded-xl border border-accent p-2 shadow-xl transition hover:border-green hover:shadow-green relative overflow-hidden"
                   href={live}
                   target="_blank"
                 >
                   <img
                     src={image}
                     alt={name}
-                    className="group-hover:scale-110 duration-75 ease-in"
+                    className="group-hover:scale-110 duration-75 ease-in rounded-md h-full"
                   />
+                  <div className="group-hover:top-0 absolute -top-full left-0 w-full h-full px-2 bg-black bg-opacity-75 flex items-center justify-center flex-col">
+                    <h2 className="mt-4 text-xl font-bold capitalize text-white">
+                      {name}
+                    </h2>
 
-                  <h2 className="mt-4 text-xl font-bold capitalize text-white">
-                    {name}
-                  </h2>
-
-                  <p className="mt-1 text-sm text-gray-300">{des}</p>
-                  <section className="flex items-center mt-4 gap-5">
-                    {techs.map((item, index) => (
-                      <img src={item} key={index} className="w-8 h-8" />
-                    ))}
-                  </section>
+                    {/* <p className="mt-1 text-sm text-gray-300">{des}</p> */}
+                    <section className="flex items-center mt-4 gap-5">
+                      {techs.map((item, index) => (
+                        <img src={item} key={index} className="w-8 h-8" />
+                      ))}
+                    </section>
+                  </div>
                 </a>
               );
             })}
