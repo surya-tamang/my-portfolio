@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Portfolio",
+      "image": "projectimage/portfolio.png",
+      "live": "https://surya-tamang.com.np",
+      "preview": "https://github.com/surya-tamang/my-portfolio",
+      "des": "This is a portfolio website project developed using React.js and styled with Tailwind CSS and vanilla css. It includes dynamic typing effects using the Typed.js library and animations with the GSAP library",
+      "techs": ["tech stack/atom.png", "tech stack/tailwind.png"]
+    },
+    {
       "name": "space tourism",
       "image": "projectimage/spacetourism.png",
       "live": "https://surya-tamang.github.io/space-tourism/",
@@ -31,19 +39,6 @@
       "preview": "https://github.com/surya-tamang/weather-app",
       "des": "Created a weather application that provides real-time weather updates for any city worldwide, enhancing user experience with a responsive design and seamless data integration.",
       "techs": ["tech stack/atom.png", "tech stack/tailwind.png"]
-    },
-
-    {
-      "name": "Faq accordion",
-      "image": "projectimage/faqaccordion.png",
-      "live": "https://65d02b62a5c29856167c0a46--eclectic-blancmange-273c7d.netlify.app/",
-      "preview": "https://github.com/surya-tamang/faq-accordion/tree/main/faq-accordion-main",
-      "des": "An FAQ accordion is a user interface component commonly used on websites to organize and display frequently asked questions (FAQs) in a compact and accessible manner. It typically includes multiple items, each containing a question and its corresponding answer.",
-      "techs": [
-        "tech stack/html-5.png",
-        "tech stack/css-3.png",
-        "tech stack/java-script.png"
-      ]
     }
   ]
 }

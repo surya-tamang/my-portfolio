@@ -16,8 +16,8 @@ const Hero = () => {
 
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = "cv/surya tamang.pdf";
-    link.download = "surya-tamang.pdf";
+    link.href = "cv/surya_tamang.pdf";
+    link.download = "surya_tamang.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
