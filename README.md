@@ -1,4 +1,4 @@
-## Portfolio Website
+# Portfolio Website
 
 This is a portfolio website project developed using React.js and styled with Tailwind CSS and vanilla css. It includes dynamic typing effects using the Typed.js library.
 
