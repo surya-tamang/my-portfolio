@@ -100,7 +100,7 @@ const Header = ({ menu, toggleMenu }) => {
                 offset={offset}
                 duration={500}
                 onClick={toggleMenu}
-                className="navlist block uppercase font-mono py-1 my-5 md:py-0 px-1 md:text-white relative cursor-pointer z-30"
+                className="navlist block uppercase font-mono py-1 my-5 md:py-0 px-1 md:text-white relative cursor-pointer z-50"
               >
                 {nav}
               </Link>

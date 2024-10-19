@@ -17,7 +17,19 @@
       "techs": ["tech stack/atom.png", "tech stack/tailwind.png"]
     },
     {
-      "name": "Ecommerce site",
+      "name": "Target_clone [Ecommerce site]",
+      "image": "projectimage/target_clone.png",
+      "live": "https://surya-tamang.github.io/target_clone/",
+      "preview": "https://github.com/surya-tamang/target_clone",
+      "des": "Developed an UI clone of Target website",
+      "techs": [
+        "tech stack/atom.png",
+        "tech stack/tailwind.png",
+        "tech stack/Redux.png"
+      ]
+    },
+    {
+      "name": "Ecommerce site [basic design]",
       "image": "projectimage/fashionbazar.png",
       "live": "https://surya-tamang.github.io/fashion-bazar/",
       "preview": "https://github.com/surya-tamang/fashion-bazar",

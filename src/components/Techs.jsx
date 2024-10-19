@@ -7,6 +7,7 @@ const Techs = () => {
     { name: "java script", image: "tech stack/java-script.png" },
     { name: "react js", image: "tech stack/atom.png" },
     { name: "tailwind css", image: "tech stack/tailwind.png" },
+    { name: "redux", image: "tech stack/Redux.png" },
     { name: "java", image: "tech stack/java.png" },
   ];
   return (

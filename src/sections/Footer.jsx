@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-
-const Footer = ({ year, author }) => {
+const Footer = () => {
+  const year = new Date().getFullYear();
+  const author = "Surya Tamang";
   return (
     <footer
       className="bg-transparent border-t border-stone-700 w-full text-center"
@@ -13,16 +13,6 @@ const Footer = ({ year, author }) => {
       </div>
     </footer>
   );
-};
-
-Footer.propTypes = {
-  year: PropTypes.number.isRequired,
-  author: PropTypes.string.isRequired,
-};
-
-Footer.defaultProps = {
-  year: new Date().getFullYear(),
-  author: "Surya Tamang",
 };
 
 export default Footer;

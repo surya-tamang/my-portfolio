@@ -27,7 +27,8 @@ const Hero = () => {
       <img
         src="heropage/IMG_20240711_175318.png"
         alt="orbit"
-        className="w-full md:hidden absolute drop-shadow-md z-10 top-36 opacity-50"
+        id="orbit"
+        className="w-full md:hidden absolute drop-shadow-md -z-10 pointer-events-none top-36 opacity-50"
       />
       <article
         ref={heroBox}
