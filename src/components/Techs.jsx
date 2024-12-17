@@ -1,19 +1,53 @@
 import Heading from "./Heading";
+import reactjs from "../assets/atom.png";
+import java from "../assets/java.png";
+import redux from "../assets/Redux.png";
+import tailwind from "../assets/tailwind.png";
+import node from "../assets/nodejs.png";
+import mongo from "../assets/mongodb_standard.png";
+import express from "../assets/express-js.png";
+import js from "../assets/java-script.png";
 
 const Techs = () => {
   const techStacks = [
-    { name: "HTML-5", image: "tech stack/html-5.png" },
-    { name: "css-3", image: "tech stack/css-3.png" },
-    { name: "java script", image: "tech stack/java-script.png" },
-    { name: "react js", image: "tech stack/atom.png" },
-    { name: "tailwind css", image: "tech stack/tailwind.png" },
-    { name: "redux", image: "tech stack/Redux.png" },
-    { name: "java", image: "tech stack/java.png" },
+    { name: "js", image: js },
+    { name: "react js", image: reactjs },
+    { name: "tailwind css", image: tailwind },
+    { name: "redux", image: redux },
+    { name: "nodejs", image: node },
+    { name: "express.js", image: express },
+    { name: "mongoDb", image: mongo },
+    { name: "java", image: java },
   ];
   return (
-    <section className="techs w-11/12 md:px-10 px-5 rounded-lg bg-accent md:mt-5 mt-10">
-      <Heading title="tech stacks" />
-      <article className="flex flex-wrap justify-evenly md:gap-2 items-center md:my-20 ">
+    <section className="techs w-11/12 px-5 rounded-lg md:mt-32 mt-10">
+      <Heading title="languages and tools" />
+
+      <div className="flex items-center flex-col md:flex-row gap-6">
+        <div className="flex mt-6 w-full">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=surya-tamang&theme=shadow_blue&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
+            alt=""
+            className="w-96 h-52"
+          />
+        </div>
+        <marquee behavior="scroll" direction="left">
+          <div className="flex gap-10">
+            {techStacks.map((item, index) => {
+              return (
+                <img
+                  key={index}
+                  src={item.image}
+                  alt={item.name}
+                  className="h-16 w-16 object-contain"
+                />
+              );
+            })}
+          </div>
+        </marquee>
+      </div>
+
+      {/*  <article className="flex flex-wrap justify-evenly md:gap-2 items-center md:my-20 ">
         {techStacks.map((stacks, index) => {
           const { name, image } = stacks;
           return (
@@ -28,7 +62,7 @@ const Techs = () => {
             </div>
           );
         })}
-      </article>
+      </article> */}
     </section>
   );
 };

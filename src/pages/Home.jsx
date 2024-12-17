@@ -38,15 +38,6 @@ const Home = () => {
           <Techs />
         </section>
 
-        {/* about me section */}
-
-        <section
-          className="w-full flex items-center justify-center my-10"
-          id="about"
-        >
-          <About />
-        </section>
-
         {/* project section  */}
 
         <section
@@ -54,6 +45,15 @@ const Home = () => {
           id="project"
         >
           <Project />
+        </section>
+
+        {/* about me section */}
+
+        <section
+          className="w-full flex items-center justify-center my-10"
+          id="about"
+        >
+          <About />
         </section>
 
         {/* contact section */}

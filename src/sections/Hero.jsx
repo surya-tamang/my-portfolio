@@ -39,7 +39,7 @@ const Hero = () => {
             I&apos;m Surya Tamang
           </h1>
           <h2 className="sm:text-2xl text-1xl py-3 tracking-widest font-semibold text-green">
-            A frontend developer
+            A web developer
           </h2>
         </header>
         <section>

@@ -5,52 +5,36 @@
       "image": "projectimage/portfolio.png",
       "live": "https://surya-tamang.com.np",
       "preview": "https://github.com/surya-tamang/my-portfolio",
-      "des": "This is a portfolio website project developed using React.js and styled with Tailwind CSS and vanilla css. It includes dynamic typing effects using the Typed.js library and animations with the GSAP library",
-      "techs": ["tech stack/atom.png", "tech stack/tailwind.png"]
+      "des": "This is a portfolio website project developed using React.js and styled with Tailwind CSS and vanilla css. It includes dynamic typing effects using the Typed.js library and animations with the GSAP library"
     },
+    {
+      "name": "Trendhop",
+      "image": "projectimage/target_clone.png",
+      "live": "https://surya-tamang.github.io/trendhop/",
+      "preview": "https://github.com/surya-tamang/trendhop",
+      "des": "Trendhop is a clothing e-commerce site designed to be user-friendly, built with React.js and Tailwind CSS."
+    },
+    {
+      "name": "Finance tracker",
+      "image": "projectimage/target_clone.png",
+      "preview": "https://github.com/surya-tamang/finance_tracker",
+      "des": "The Finance Tracker app, built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and styled with Tailwind CSS, allows users to manage and track their expenses efficiently."
+    },
+
     {
       "name": "space tourism",
       "image": "projectimage/spacetourism.png",
       "live": "https://surya-tamang.github.io/space-tourism/",
       "preview": "https://github.com/surya-tamang/space-tourism",
-      "des": "Developed a space tourism website using React.js and tailwind CSS. The site features a user-friendly interface, and users are able to view each page and be able to toggle between the tabs to see new information. It is responsive to all devices.",
-      "techs": ["tech stack/atom.png", "tech stack/tailwind.png"]
+      "des": "Developed a space tourism website using React.js and tailwind CSS. The site features a user-friendly interface, and users are able to view each page and be able to toggle between the tabs to see new information. It is responsive to all devices."
     },
+
     {
       "name": "Target_clone [Ecommerce site]",
       "image": "projectimage/target_clone.png",
       "live": "https://surya-tamang.github.io/target_clone/",
       "preview": "https://github.com/surya-tamang/target_clone",
-      "des": "Developed an UI clone of Target website",
-      "techs": [
-        "tech stack/atom.png",
-        "tech stack/tailwind.png",
-        "tech stack/Redux.png"
-      ]
-    },
-    {
-      "name": "Ecommerce site [basic design]",
-      "image": "projectimage/fashionbazar.png",
-      "live": "https://surya-tamang.github.io/fashion-bazar/",
-      "preview": "https://github.com/surya-tamang/fashion-bazar",
-      "des": " Developed an e-commerce website, 'Fashion Bazar' focused on providing a seamless shopping experience for fashion products.",
-      "techs": ["tech stack/atom.png", "tech stack/tailwind.png"]
-    },
-    {
-      "name": "Movie app",
-      "image": "projectimage/movieApp.png",
-      "live": "https://surya-tamang.github.io/movie-app/",
-      "preview": "https://github.com/surya-tamang/movie-app",
-      "des": "Developed a responsive movie application using React and Tailwind CSS, enabling users to search for movies and view detailed information about each title.",
-      "techs": ["tech stack/atom.png", "tech stack/tailwind.png"]
-    },
-    {
-      "name": "Weather app",
-      "image": "projectimage/weather.png",
-      "live": "https://surya-tamang.github.io/weather-app/",
-      "preview": "https://github.com/surya-tamang/weather-app",
-      "des": "Created a weather application that provides real-time weather updates for any city worldwide, enhancing user experience with a responsive design and seamless data integration.",
-      "techs": ["tech stack/atom.png", "tech stack/tailwind.png"]
+      "des": "Developed an UI clone of Target website"
     }
   ]
 }

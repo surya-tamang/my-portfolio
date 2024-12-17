@@ -16,11 +16,11 @@ const About = () => {
       <Heading title="About me" />
 
       <article className="flex md:gap-20 md:flex-row flex-col items-center gap-10 ">
-        <figure className="md:w-10/12 w-auto">
+        <figure className="md:w-10/12 w-full">
           <img
             src="IMG_20240523_172015.jpg"
             alt="A portrait of Surya Tamang"
-            className="rounded-full max-w-xs md:max-w-md my-20"
+            className="rounded-full  my-20"
           />
         </figure>
         <div className="text-center md:text-left">
@@ -28,8 +28,7 @@ const About = () => {
             Welcome! I&apos;m <b className="text-green">Surya Tamang</b>, a
             passionate web developer dedicated to creating impactful digital
             experiences. Explore my portfolio to see how I turn ideas into
-            reality. Thank you for
-            <br className="md:hidden" /> visiting.
+            reality. Thank you for visiting.
           </p>
         </div>
       </article>
@@ -42,7 +41,7 @@ const About = () => {
         </p>
         <ConnectIcons />
 
-        {/* npx surjey */}
+        {/* npx surya */}
         <div className=" mt-[-10px] flex items-center mx-auto justify-center">
           <CopyToClipboard text={textToCopy} onCopy={onCopyText}>
             <button
