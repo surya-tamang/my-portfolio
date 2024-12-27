@@ -6,6 +6,7 @@ import About from "../sections/About";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 import Project from "../sections/Project";
+import Squares from "../components/Squares";
 
 const Home = () => {
   const [menu, setMenu] = useState(false);
@@ -22,15 +23,21 @@ const Home = () => {
     <>
       <Header toggleMenu={toggleMenu} menu={menu} />
       <main className="w-full min-h-screen flex items-center flex-col relative">
+        {/* Hero Section with Squares in the background */}
         <section
-          className="w-full flex flex-col items-center justify-center md:mt-8"
+          className="w-full flex flex-col items-center justify-center py-10 relative"
           id="hero"
         >
+          {/* Squares background */}
+          <div className="absolute top-0 left-0 w-full h-full z-0">
+            <Squares />
+          </div>
+
+          {/* Hero Content */}
           <Hero />
         </section>
 
-        {/* tech stack section */}
-
+        {/* Tech Stack Section */}
         <section
           className="w-full flex items-center justify-center my-10"
           id="techs"
@@ -38,8 +45,7 @@ const Home = () => {
           <Techs />
         </section>
 
-        {/* project section  */}
-
+        {/* Project Section */}
         <section
           className="w-full flex items-center justify-center my-10"
           id="project"
@@ -47,8 +53,7 @@ const Home = () => {
           <Project />
         </section>
 
-        {/* about me section */}
-
+        {/* About Me Section */}
         <section
           className="w-full flex items-center justify-center my-10"
           id="about"
@@ -56,8 +61,7 @@ const Home = () => {
           <About />
         </section>
 
-        {/* contact section */}
-
+        {/* Contact Section */}
         <section
           className="w-full flex items-center justify-center my-10"
           id="contact"
@@ -66,8 +70,7 @@ const Home = () => {
         </section>
       </main>
 
-      {/* footer */}
-
+      {/* Footer */}
       <Footer />
     </>
   );
